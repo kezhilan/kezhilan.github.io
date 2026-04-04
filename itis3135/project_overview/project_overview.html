@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/default.css">
+        <title>Project Overview</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <h1>Requirements and Design Document</h1>
+
+        <div class="section">
+            <h2>Project Name</h2>
+            <p>Java Learning Platform</p>
+        </div>
+
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p><strong>Description:</strong> An online platform that teaches users the basics of Java.</p>
+            <ul>
+                <li>Application helps users learn Java programming</li>
+                <li>Intended for beginners and students</li>
+                <li>Includes lessons, practice, and community interaction</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Client Information</h2>
+            <ul>
+                <li><strong>Name of the client:</strong></li>
+                <li><strong>Organization/Institute/Business:</strong></li>
+                <li><strong>Email Address:</strong></li>
+                <li><strong>Phone Number:</strong></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Site Map</h2>
+            <figure>
+                <img src="sitemap/Site_Map.drawio.png" alt="Site Map">
+            </figure>
+
+            <h3>Page Design</h3>
+
+            <button class="accordion">Home Page</button>
+            <div class="panel">
+                <ul>
+                    <li><strong>Purpose:</strong> Landing page introducing the platform</li>
+                    <li><strong>Audience:</strong> All users</li>
+                    <li><strong>Content:</strong> Overview and navigation</li>
+                    <li><strong>User Input:</strong> No</li>
+                    <li><strong>Actions:</strong> Navigate to other pages</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Goal Page</button>
+            <div class="panel">
+                <ul>
+                    <li><strong>Purpose:</strong> Explain platform goals</li>
+                    <li><strong>Audience:</strong> Visitors</li>
+                    <li><strong>Content:</strong> Mission and objectives</li>
+                    <li><strong>User Input:</strong> No</li>
+                </ul>
+            </div>
+
+            <button class="accordion">About Us Page</button>
+            <div class="panel">
+                <ul>
+                    <li><strong>Purpose:</strong> Info about creators</li>
+                    <li><strong>Audience:</strong> Visitors</li>
+                    <li><strong>Content:</strong> Team background</li>
+                    <li><strong>User Input:</strong> No</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Resources Page</button>
+            <div class="panel">
+                <ul>
+                    <li><strong>Purpose:</strong> Provide learning materials</li>
+                    <li><strong>Audience:</strong> Students</li>
+                    <li><strong>Content:</strong> Tutorials and links</li>
+                    <li><strong>User Input:</strong> No</li>
+                    <li><strong>Actions:</strong> Navigate to resources</li>
+                </ul>
+            </div>
+
+            <button class="accordion">LearningHub Page</button>
+            <div class="panel">
+                <ul>
+                    <li><strong>Purpose:</strong> Teach Java with practice</li>
+                    <li><strong>Audience:</strong> Students</li>
+                    <li><strong>Content:</strong> Readings, examples, exercises</li>
+                    <li><strong>User Input:</strong> Yes</li>
+                    <li><strong>Validations:</strong> Code/input validation</li>
+                    <li><strong>Actions:</strong> Run and submit code</li>
+                    <li><strong>Special Notes:</strong> Interactive coding</li>
+                </ul>
+            </div>
+
+            <button class="accordion">CommunityHub Page</button>
+            <div class="panel">
+                <ul>
+                    <li><strong>Purpose:</strong> Share and view code</li>
+                    <li><strong>Audience:</strong> Registered users</li>
+                    <li><strong>Content:</strong> Posts, code, awards</li>
+                    <li><strong>User Input:</strong> Yes</li>
+                    <li><strong>Validations:</strong> Required fields</li>
+                    <li><strong>Actions:</strong> Post, comment, view</li>
+                    <li><strong>Special Notes:</strong> Community interaction</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <script>
+            const accordions = document.querySelectorAll(".accordion");
+
+            accordions.forEach(button => {
+                button.addEventListener("click", () => {
+                    const panel = button.nextElementSibling;
+
+                    document.querySelectorAll(".panel").forEach(p => {
+                        if (p !== panel) p.style.display = "none";
+                    });
+
+                    panel.style.display = panel.style.display === "block" ? "none" : "block";
+                });
+            });
+        </script>
+
+    </body>
+</html>
