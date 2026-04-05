@@ -42,94 +42,68 @@
             <figure>
                 <img src="sitemap/Site_Map.drawio.png" alt="Site Map">
             </figure>
-
-            <h3>Page Design</h3>
-
-            <button class="accordion">Home Page</button>
-            <div class="panel">
-                <ul>
-                    <li><strong>Purpose:</strong> Landing page introducing the platform</li>
-                    <li><strong>Audience:</strong> All users</li>
-                    <li><strong>Content:</strong> Overview and navigation</li>
-                    <li><strong>User Input:</strong> No</li>
-                    <li><strong>Actions:</strong> Navigate to other pages</li>
-                </ul>
-            </div>
-
-            <button class="accordion">Goal Page</button>
-            <div class="panel">
-                <ul>
-                    <li><strong>Purpose:</strong> Explain platform goals</li>
-                    <li><strong>Audience:</strong> Visitors</li>
-                    <li><strong>Content:</strong> Mission and objectives</li>
-                    <li><strong>User Input:</strong> No</li>
-                </ul>
-            </div>
-
-            <button class="accordion">About Us Page</button>
-            <div class="panel">
-                <ul>
-                    <li><strong>Purpose:</strong> Info about creators</li>
-                    <li><strong>Audience:</strong> Visitors</li>
-                    <li><strong>Content:</strong> Team background</li>
-                    <li><strong>User Input:</strong> No</li>
-                </ul>
-            </div>
-
-            <button class="accordion">Resources Page</button>
-            <div class="panel">
-                <ul>
-                    <li><strong>Purpose:</strong> Provide learning materials</li>
-                    <li><strong>Audience:</strong> Students</li>
-                    <li><strong>Content:</strong> Tutorials and links</li>
-                    <li><strong>User Input:</strong> No</li>
-                    <li><strong>Actions:</strong> Navigate to resources</li>
-                </ul>
-            </div>
-
-            <button class="accordion">LearningHub Page</button>
-            <div class="panel">
-                <ul>
-                    <li><strong>Purpose:</strong> Teach Java with practice</li>
-                    <li><strong>Audience:</strong> Students</li>
-                    <li><strong>Content:</strong> Readings, examples, exercises</li>
-                    <li><strong>User Input:</strong> Yes</li>
-                    <li><strong>Validations:</strong> Code/input validation</li>
-                    <li><strong>Actions:</strong> Run and submit code</li>
-                    <li><strong>Special Notes:</strong> Interactive coding</li>
-                </ul>
-            </div>
-
-            <button class="accordion">CommunityHub Page</button>
-            <div class="panel">
-                <ul>
-                    <li><strong>Purpose:</strong> Share and view code</li>
-                    <li><strong>Audience:</strong> Registered users</li>
-                    <li><strong>Content:</strong> Posts, code, awards</li>
-                    <li><strong>User Input:</strong> Yes</li>
-                    <li><strong>Validations:</strong> Required fields</li>
-                    <li><strong>Actions:</strong> Post, comment, view</li>
-                    <li><strong>Special Notes:</strong> Community interaction</li>
-                </ul>
-            </div>
-
         </div>
 
-        <script>
-            const accordions = document.querySelectorAll(".accordion");
+        <div class="section">
+            <h2>Page Design</h2>
 
-            accordions.forEach(button => {
-                button.addEventListener("click", () => {
-                    const panel = button.nextElementSibling;
+            <h3>Home Page</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Landing page introducing the platform</li>
+                <li><strong>Audience:</strong> All users</li>
+                <li><strong>Content:</strong> Overview and navigation</li>
+                <li><strong>User Input:</strong> No</li>
+                <li><strong>Actions:</strong> Navigate to other pages</li>
+            </ul>
 
-                    document.querySelectorAll(".panel").forEach(p => {
-                        if (p !== panel) p.style.display = "none";
-                    });
+            <h3>Goal Page</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Explain platform goals</li>
+                <li><strong>Audience:</strong> Visitors</li>
+                <li><strong>Content:</strong> Mission and objectives</li>
+                <li><strong>User Input:</strong> No</li>
+            </ul>
 
-                    panel.style.display = panel.style.display === "block" ? "none" : "block";
-                });
-            });
-        </script>
+            <h3>About Us Page</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Info about creators</li>
+                <li><strong>Audience:</strong> Visitors</li>
+                <li><strong>Content:</strong> Team background</li>
+                <li><strong>User Input:</strong> No</li>
+            </ul>
+
+            <h3>Resources Page</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Provide learning materials</li>
+                <li><strong>Audience:</strong> Students</li>
+                <li><strong>Content:</strong> Tutorials and links</li>
+                <li><strong>User Input:</strong> No</li>
+                <li><strong>Actions:</strong> Navigate to resources</li>
+            </ul>
+
+            <h3>LearningHub Page</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Teach Java with practice</li>
+                <li><strong>Audience:</strong> Students</li>
+                <li><strong>Content:</strong> Readings, examples, exercises</li>
+                <li><strong>User Input:</strong> Yes</li>
+                <li><strong>Validations:</strong> Code/input validation</li>
+                <li><strong>Actions:</strong> Run and submit code</li>
+                <li><strong>Special Notes:</strong> Interactive coding</li>
+            </ul>
+
+            <h3>CommunityHub Page</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Share and view code</li>
+                <li><strong>Audience:</strong> Registered users</li>
+                <li><strong>Content:</strong> Posts, code, awards</li>
+                <li><strong>User Input:</strong> Yes</li>
+                <li><strong>Validations:</strong> Required fields</li>
+                <li><strong>Actions:</strong> Post, comment, view</li>
+                <li><strong>Special Notes:</strong> Community interaction</li>
+            </ul>
+
+        </div>
 
     </body>
 </html>
